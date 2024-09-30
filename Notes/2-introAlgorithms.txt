@@ -1,0 +1,29 @@
+an algorithm is a set of instructions  to perform a task or to solve a given problem.
+
+for example: a recipe book is a collection of recipes in which each recipe provides a step by step instruction to prepare food.
+
+lets say you want to prepare a tea. So, the steps would be:
+    1. boil water
+    2. put tea in tea pot
+    3. add hot water
+    4. put hot tea in tea cups
+    5. do you need sugar?
+        a. if yes, put it into tea cups
+        b. if no, skip this step
+    6. stir, drink and enjoy!
+
+
+print average of 3 numbers.
+lets say you want to write an algorithm for it. so the steps would be:
+    1. perform sum of 3 numbers
+    2. store it in a variable sum
+    3. divide sum by 3
+    4. store the value in a variable average
+    5. print average
+
+        public void findAvg(int a, int b, int c){
+            int sum = a + b + c;
+            int avg = sum / 3;
+            System.out.println(avg);
+        }
+

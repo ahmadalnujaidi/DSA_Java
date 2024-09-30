@@ -1,0 +1,21 @@
+TIME COMPLEXITY
+
+its the amount of time taken by the algorithm to run.
+The input processed by an algorithm helps in determining the time complexity.
+
+
+first algorithm example: This one will be more efficient, because less time taken compared to second algorithm
+    
+    public int findSum(int n){
+        return n * (n + 1) / 2
+    }
+
+second algorithm example: This one will take more time.
+
+    public int findSum(int n){
+        int sum = 0;
+        for (int i = 1; i <= n; i++){
+            sum = sum + i;
+        }
+    return sum;
+    }
