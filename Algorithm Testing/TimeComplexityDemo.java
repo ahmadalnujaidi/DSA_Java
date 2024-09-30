@@ -7,15 +7,15 @@ public class TimeComplexityDemo{
 
         System.out.println("time taken: " + (System.currentTimeMillis() - now) + "millisecs.");
     }
-    public int findSum(int n){
-        return n * (n + 1) / 2;
-    };
-
     // public int findSum(int n){
-    //     int sum = 0;
-    //     for (int i = 1; i <= n; i++){
-    //         sum = sum + i;
-    //     }
-    // return sum;
-    // }
+    //     return n * (n + 1) / 2;
+    // };
+
+    public int findSum(int n){
+        int sum = 0;
+        for (int i = 1; i <= n; i++){
+            sum = sum + i;
+        }
+    return sum;
+    }
 }
