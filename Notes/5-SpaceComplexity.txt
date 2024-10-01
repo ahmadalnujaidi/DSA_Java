@@ -1,0 +1,24 @@
+SPACE COMPLEXITY
+
+its the amount of memory or space taken by an algorithm to run.
+
+The memory requrired to process the input by an algorithm helps in determining the space complexity...
+
+
+            first algorithm example: 
+                
+                public int findSum(int n){
+                    return n * (n + 1) / 2
+                }
+
+
+
+            second algorithm example:
+
+                public int findSum(int n){
+                    int sum = 0;
+                    for (int i = 1; i <= n; i++){
+                        sum = sum + i;
+                    }
+                return sum;
+                }

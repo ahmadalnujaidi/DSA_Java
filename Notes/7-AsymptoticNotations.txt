@@ -1,0 +1,14 @@
+ASYMPTOTIC NOTATIONS:
+
+asymptotic notations are the mathmatical tools used to describe the running time of an algorithm in terms of input size.
+
+Example: Performance of car in 1 litre of patrol...
+
+Highway (min traffic) - 25km/litre
+City (max traffic) - 15km/litre
+City + Highway (avg traffic) - 20km/litre
+
+asymptotic notations help us in determining:
+1. Best Case
+2. Average Case
+3. Worst Case

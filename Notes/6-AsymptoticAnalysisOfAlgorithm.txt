@@ -1,0 +1,6 @@
+ASYMPTOTIC ANALYSIS OF AN ALGORITHM.
+
+asymptotic analysis helps in evaluating the performance of an algorithm in terms of input size and its increase.
+using asymptotic analysis we don't actually measure actual running time of algorithm
+it gives us an idea of how the running time of an algorithm will behave as the input size increases
+it helps in determining how time and space taken by an algorithm increases with input size

@@ -1,0 +1,32 @@
+Types of asymptotic notations:
+
+There are three notations for performing runtime analysis of an algorithm:-
+    1. Omega (Ω) notation
+    2. Big O (O) notation
+    3. Theta (θ) notation 
+
+Omega (Ω) notation:
+    it is the formal way to express the lower bound of an algorithm's running time.
+    LOWER BOUND means for any given input this notation determines best amount of time an algorithm can take to complete
+    -BEST CASE-
+    for example:
+        if we say a certain algorithm takes 100 seconds as best amount of time. So, 100 seconds will be the lower bound of that algorithm.
+        The algorithm can take more than 100 seconds but it will not take less than 100 seconds.
+
+
+Big O (O) notation:
+    it is the formal way to express the upper boun of an algorithm's running time.
+    UPPER BOUND means for any given input this notation determines longest amount of time an algorithm can take to complete.
+    -WORST CASE-
+    for example:
+        if we say a certain algorithm takes 100 seconds as longest amount of time. So, 100 seconds will be the upper bound of that algorithm.
+        The algorithm can take less than 100 seconds but it will not take more than 100 seconds.
+
+
+Theta (θ) notation:
+    it is the formal way to express both the upper bound and lower bound of an algorithm's running time.
+    by upper and lower bound we mean for any given input this notation determines the average amount of time an algorithm can take to complete.
+    -AVERAGE CASE-
+    for example:
+        if we run certain algorithm and it takes 100 seconds for the first run, 120 seconds for the second run, and 110 seconds for the third run,
+        and so on... So, theta notation gives an average of running time of that algorithm.
