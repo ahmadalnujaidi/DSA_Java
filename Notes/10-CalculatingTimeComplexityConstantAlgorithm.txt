@@ -1,0 +1,29 @@
+Calculating the Time Complexity of a Constant Algorithm:
+
+    public int sum(int x, int y){
+        int result = x + y;
+        return result;
+    }
+
+    line no.    |    operations     |   unit time  
+    2           |   1+1+1+1         |   4
+    3           |   1+1             |   2
+
+
+-we are accessing x thats 1 operation, then we are accessing y thats 2nd operating, then we are adding them thats a 3rd operation
+then we are assigning it to result thats the 4th operation...
+
+-we are accessing result thats 1st operation, then we are returning result thats the 2nd operation...
+
+Total time taken: T = 4 + 2 = 6
+        T = C (constant)
+
+                    Time Complexity = O(1)
+    
+    public int get(int[] arr, int i){
+        return arr[i];
+    }
+
+        constant algorithm...
+
+                                        Constant Algoritm Graph Image: https://www.theknowledgeacademy.com/_files/images/Constant_Time_Complexity.png

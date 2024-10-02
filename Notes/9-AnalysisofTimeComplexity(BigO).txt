@@ -1,0 +1,32 @@
+analysis of time complexity - Big O notation
+
+Big O Notation:
+    it is the formal way to express the upper bound of an algorithm's running time
+    Upper bound means for any given input this notation determines longest amount of time an algorithm can take to complete
+
+Rules of Big O Notation:
+    Let's say we are given a machine:
+        it's a single processor
+
+        it performs sequential execution of statements
+
+        assignment operation takes 1 unit of time:
+            int x = 5; -> 1 unit of time (constant)
+
+        return statement takes in 1 unit of time
+            return x; -> 1 unit of time (constant)
+
+        arithmetical operation taken 1 unit of time
+            x + y; -> 1 unit of time (constant)
+
+        logical operation takes 1 unit of time
+            x && y -> 1 unit of time (constant)
+
+        other small/single operations takes 1 unit of time
+
+        drop lower order terms
+
+        drop constant multipliers
+
+let's say time taken by algorithm turns out to be:          T = n^2 + 3n + 1 ==> O(n^2)
+let's say time taken by algorithm turns out to be:          T = 3n^2 + 6n + 1 ==> O(n^2)
