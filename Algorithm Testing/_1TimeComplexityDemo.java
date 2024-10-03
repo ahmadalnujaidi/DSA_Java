@@ -1,8 +1,8 @@
-public class TimeComplexityDemo{
+public class _1TimeComplexityDemo{
     public static void main(String[] args) {
         double now = System.currentTimeMillis();
 
-        TimeComplexityDemo test = new TimeComplexityDemo();
+        _1TimeComplexityDemo test = new _1TimeComplexityDemo();
         System.out.println(test.findSum(99999));
 
         System.out.println("time taken: " + (System.currentTimeMillis() - now) + "millisecs.");
@@ -18,4 +18,6 @@ public class TimeComplexityDemo{
         }
     return sum;
     }
+
+    
 }
