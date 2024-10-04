@@ -1,0 +1,20 @@
+ARRAY:
+
+1. its a collection (box)..
+2. it can hold many things (items)..
+3. adjacent or contiguous
+4. size of box is fixed and cannot be modified
+5. being adjacent each is indexed and can be determined by its position
+
+
+        array of 4 elements
+arr[] -> [5, 9, 3, 10]
+          0  1  2  3
+
+          1. its a collection (box) of data elements of specified type
+          2. all data holding ata have contiguous memory locations
+          3. each element has two neighbors except first and last one
+          4. size of array is fixed and cannot be modified once it is created
+          5. being adjacent each element is indexed and can be determined by its position
+          6. index starts at 0 and for (one dimensional array) it ends at length - 1
+          

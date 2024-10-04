@@ -1,0 +1,33 @@
+Decleration and Initialization of an Array:
+
+One dimensional array can be declared via syntax-
+            
+            dataType arrayName[];
+            dataType[] arrayName;
+
+    for example:
+            int myArray[];
+            int[] myArray;
+
+
+Initialization of an array:
+
+        it gives memory to array elements. One dimensional array can be Initialized via syntax-
+        
+            arrayName = new dataType[size];
+
+        for example:
+            myArray = new int[5];
+
+Decleration and Initialization:
+
+    the array can be declared and Initialized in same line via sytax-
+
+        dataType[] arrayName = new dataType[size];
+        dataType arrayName[] = new dataType[size];
+
+        for example:
+            int[] myArray = new int[5];
+            int myArray[] = new int[5];
+
+            int[] myArray = {5, 4, 3, 2, 6}
