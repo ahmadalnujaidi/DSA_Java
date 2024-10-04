@@ -30,4 +30,4 @@ Decleration and Initialization:
             int[] myArray = new int[5];
             int myArray[] = new int[5];
 
-            int[] myArray = {5, 4, 3, 2, 6}
+            int[] myArray = {5, 4, 3, 2, 6};
