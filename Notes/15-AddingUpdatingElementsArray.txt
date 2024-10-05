@@ -1,0 +1,12 @@
+Adding or Updating Elements in an Array:
+
+    public void arrayDemo(){
+        int[] myArray = new int[5];
+        myArray[0]  = 5;
+        myArray[1] = 10;
+        myArray[2] = 15;
+        myArray[3] = 20;
+        myArray[4] = 25;
+        myArray[2] = 9;  // updating the value at index 2, will overwrite  the value 15 with 9
+        myArray[5] = 7;  // java.lang.ArrayIndexOutOfBoundsException:  Index 5 out of bounds for length 5
+    }
