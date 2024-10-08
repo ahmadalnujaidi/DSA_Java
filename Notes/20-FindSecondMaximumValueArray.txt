@@ -1,0 +1,51 @@
+Find the second maximum value in an array
+
+Example-
+    input: arr = {12, 34, 2, 34, 33, 1}
+    output: 33
+
+
+                    public findSecondMax(int[] arr){
+                        int max = Integer.MIN_VALUE;       // Integer.MIN_VALUE = -2147483648      to compare safely
+                        int secondMax = Integer.MIN_VALUE;  // Integer.MIN_VALUE = -2147483648
+                        for(int i = 0; i < arr.length; i++){
+                            if(arr[i] > max){
+                                secondMax = max;
+                                max = arr[i];
+                            } else if(arr[i] > secondMax && arr[i] != max){
+                                secondMax = arr[i];
+                            }
+                        }
+                        return secondMax;
+                    }
+
+
+arr[] = {12, 34, 2, 34, 33, 1}
+secondMax = Integer.MIN_VALUE = -2147483648
+max = Integer.MIN_VALUE = -2147483648
+findSecondMax(arr);
+
+i starts at 0 
+    compare 13 with the current state of max(-2147483648) and then secondMax = max(-2147483648) then after that max = 13;
+
+i = 1
+    34 > 13
+        secondMax = 13, max = 34
+
+i = 2
+    if: false
+        else if: false
+
+i = 3
+    if: false
+        else if: (arr[i] != max) so its false
+
+i = 4
+    if: false
+        else if: true, secondMax = 33;
+
+i = 5
+    if: false
+        else if: false
+
+---return secondMax;---
