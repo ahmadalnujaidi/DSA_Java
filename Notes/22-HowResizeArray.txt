@@ -1,0 +1,35 @@
+HOW TO RESIZE AN ARRAY IN JAVA:
+
+arr[] = {5, 9, 3, 10}
+         0  1  2  3
+
+
+            public void resize(int[] arr, int capacity){
+                int[] temp = new int[capacity];
+                for(int i = 0; i < arr.length; i++){
+                    temp[i] = arr[i];
+                }
+                arr = temp;
+            }
+
+    arr.length = 4
+    resize(arr, arr.length * 2)
+    capacity = 8
+    temp[] = {5, 9, 3, 10, , , , ,}
+              0  1  2  3  4 5 6 7 8
+
+            once i = 5, the for loop terminates...
+                then we reassign arr = temp... so arr[] will point to temp[] in the heap
+
+    arr[] = {5, 9, 3, 10, , , , ,}
+             0  1  2  3  4 5 6 7 8
+
+            an issue will occurr: garbage will be collected so we dont keep the method as void, we make it an array and return arr;
+
+            public int[] resize(int[] arr, int capacity){
+                int[] temp = new int[capacity];
+                for(int i = 0; i < arr.length; i++){
+                    temp[i] = arr[i];
+                }
+                return temp;
+            }
