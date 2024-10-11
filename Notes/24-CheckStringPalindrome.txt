@@ -1,0 +1,40 @@
+HOW TO CHECK IF A STRING IS A PALINDROME OR NOT:
+
+Q. Given a string, the task is to check whether the given string is a palindrome or not.
+
+    example: given string - "madam"
+    solution: it should return - true
+
+    example: given string - "that"
+    solution: it should return - false
+
+            public boolean isPalindrome(string word){
+                char[] charArray = word.toCharArray();
+                int start = 0;
+                int end = word.length() - 1;
+                while (start < end) {
+                    if (charArray[start] != charArray[end]) {
+                        return false;
+                    }
+                    start++;
+                    end--;
+                }
+                return true;
+            }
+
+isPalindrome('madam');
+word = "madam"
+we create 2 pointers, one at the start, and one at the end, and we just compare those 2 characters.
+convert the string to char array: word.toCharArray();
+start = 0, end = word.length-1: end of array, which is 4
+compare charArray[start] and charArray[end] and if they are not equal return false, other wise start++ end-- and compare again
+if we finish the loop without returning false, then the string is a palindrome and we return true.
+
+isPalindrome('madam');
+word = "that"
+we create 2 pointers, one at the start, and one at the end, and we just comapre those 2 characters
+convert the string to char array: word.toCharArray();
+start = 0, end = word.length-1: end of array, which is 4
+compare charArray[start] and charArray[end] and if they are not equal return false, other wise start++ end-- and compare again
+when we reach charArray[1] and comapre with charArray[2]  we return false because they are not equal.
+
