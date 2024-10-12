@@ -1,0 +1,41 @@
+HOW TO CREATE A SINGLY LINKED LIST IN JAVA:
+
+a singly linked list is a datastructure that stores collection of data. it contains a sequence of nodes.
+
+            simple singly linked list...
+
+            head
+             |
+             V
+            [10][] -> [1][] -> [8][] -> [11][] -> null
+
+each node contains a data property, and a reference to the next node in the list
+
+
+how to create:
+
+            // head is instance variable
+            head = new ListNode(10);
+            ListNode second = new ListNode(1);
+            ListNode third = new ListNode(8);
+            ListNode fourth = new ListNode(11);
+            head.next = second;
+            second.next = third;
+            third.next = fourth;
+
+first step head -> null
+moving ahead... we create new ListNode and pass 10 as data: head -> [10][] -> null
+moving ahead... creating new list node: second -> [1][] -> null, next pointing to null
+moving ahead... creating new list node: third -> [8][] -> null, next pointing to null
+moving ahead... creating new list node: fourth -> [11][] -> null, next pointing to null
+in order to create singly linked list, you connect all nodes together and form a chain
+we assign the value of second, to head's next: head.next = second;
+second.next = third;
+third.next = fourth;
+
+            head
+             |
+             V
+            [10][] -> [1][] -> [8][] -> [11][] -> null
+
+head is holding complete list together
