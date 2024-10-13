@@ -1,0 +1,17 @@
+HOW TO FIND THE LENGTH OF A SINGLY LINKED LIST:
+
+            head
+             |
+             V
+            [10][] -> [1][] -> [8][] -> [11][] -> null
+
+        int count = 0;
+        ListNode current = head;
+        while(current!=null){
+            count++;
+            current = current.next;
+        }
+        return count;
+
+initially count = 0 if current != null, it will count++;
+count will end up being count = 4 and be returned...
