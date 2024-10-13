@@ -47,7 +47,7 @@ public class _15FindLengthSinglyLinkedList {
         third.next = fourth;
         fourth.next = fifth;
         
-        sll.display();
+        // sll.display();
         System.out.println("Length is: " + sll.length());
     }
 }
