@@ -57,17 +57,6 @@ Welcome to **47 Hours of Data Structures and Algorithms in Java**! This reposito
 
 ---
 
-## 📂 Folder Structure
-
-/DSA_JAVA
-│
-├── notes/
-│   └── notes on how algorithms work, and visuals
-└── algorithms/
-    ├── .java files, running, and executing numerous algorithms
-
----
-
 ## 🏆 Goal of This Repository
 
 The objective of this project is to **provide a complete guide to data structures and algorithms in Java**, fostering both conceptual clarity and practical coding skills. This repository is particularly useful for:
