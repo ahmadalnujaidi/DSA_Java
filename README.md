@@ -59,9 +59,12 @@ Welcome to **47 Hours of Data Structures and Algorithms in Java**! This reposito
 
 ## 📂 Folder Structure
 
-DSA_JAVA
-├── notes/ ... notes on how algorithms work and visuals.
-└── algorithms/ implementations and executions of algorithms.
+/DSA_JAVA
+│
+├── notes/
+│   └── notes on how algorithms work, and visuals
+└── algorithms/
+    ├── .java files, running, and executing numerous algorithms
 
 ---
 
