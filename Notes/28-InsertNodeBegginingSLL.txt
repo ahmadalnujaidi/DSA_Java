@@ -1,0 +1,35 @@
+HOW TO INESRT A NODE AT THE BEGGINING OF A SINGLY LINKED LIST IN JAVA:
+
+
+
+initially head -> null                              ListNode newNode = new ListNode(value);
+                                                    newNode.next = head;
+                                                    head = newNode;
+
+value = 11
+
+first we create a new list node, by passing value into constructor.
+    newNode -> 11 -> null
+    we assign newNode.next = head;
+    then head = newNode;
+
+value = 8  
+    we create a new list node, by passing value into constructor.
+    newNode -> 8 -> null            head-> 11 -> null
+                                      
+    newNode.next = head, newNode -> 8 -> 11 -> null
+                                          ^
+                                         head
+    then last step: head = newNode;
+        head -> 8 -> 11 -> null
+
+value = 1
+    we create a new list node, passing 1 into constructor
+    newNode -> 1 -> null            head -> 8 -> 11 -> null
+    make newNode.next point to 8
+    then assign head = newNode
+    head -> 1 -> 8 -> 11 -> null
+
+
+
+ 
