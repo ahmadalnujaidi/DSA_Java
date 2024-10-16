@@ -1,0 +1,43 @@
+HOW TO INSERT NODE AT THE END OF A SINGLY LINKED LIST:
+
+
+                                    ListNode newNode = ListNode(value);
+                                    if(head == null){
+                                        head = newNode;
+                                        return;
+                                    }
+                                    ListNode current = head;
+                                    while(null != current.next){
+                                        current = current.next;
+                                    }
+                                    current.next = newNode;
+
+if singly linked list empty:
+    head -> null
+value = 11
+    we create a new ListNode by passing value into constructor...
+        head    newNode
+         |         |
+         V         V
+        null       11 -> null 
+
+since head == null, we'll just appoint head = newNode: head -> 11 -> null;
+
+value = 8
+    create new listNode passing 8 into constructor
+    head -> 11 -> null      newNode -> 8 -> null
+        we assign current to head so..
+          head                 newNode
+           |                      |
+           V                      V
+current -> 11 -> null             8 -> null 
+
+    we iterate in the while loop until current.next is null, knowing its the last node of the linked list
+        once it beocomes null we assign current.next to the newNode. So...
+
+        head -> 11 -> 8 -> null
+
+
+
+
+
