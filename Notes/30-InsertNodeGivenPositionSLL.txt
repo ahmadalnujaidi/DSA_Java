@@ -1,0 +1,71 @@
+INSERT A NODE IN A SINGLY LINKED LIST AT A GIVEN POSITION:
+
+Q. implement method to insert a node at a given position. Assuming position to be valid and starting from 1.
+    for example: given following singly linked list
+    head
+     |
+     V 
+    10[] -> 1[] -> 8[] -> 11[] -> null
+
+
+lets see demo of algorithm step by step
+    head
+     |
+     V 
+    10[] -> 1[] -> null
+                            ListNode node = new ListNode(data);
+                            if(position ==1){
+                                node.next = head;
+                                head = node;
+                            } else {
+                                ListNode previous = null;
+                                int count = 1;
+                                while(count < position - 1){
+                                    previous = previous.next;
+                                    count++;
+                                }
+                                ListNode current = previous.next;
+                                node.next = current;
+                                previous.next = node;
+                            }
+
+insert(8, 1)
+position = 1        
+    node -> 8[]               head
+              |                 |
+              V                 V 
+             null              10[] -> 1[] -> null
+
+the if(position == 1) is true, so node's next will point to head: node -> 8[] -> 10[], then head will be assigned to node so it starts from 8:
+                                                                                                            head -> 8[] -> 10[] -> 1[] -> null
+
+insert(7, 3), position = 3
+            head
+             |
+             V
+             8[] -> 10[] -> 1[] -> null
+
+first create node with data 7: node -> 7[] -> null
+    position != 1 so we skip over if() and else part will be executed
+    listNode previous = head, so we can start from head and traverse over the nodes until we reach position - 1, to break the link and make it point to new node then back
+    when we reach to the position of node 10[] which is 2
+    we create new ListNode current and assign the value of previous.next to it, ListNode current = previous.next which will hold the node 1[]
+    then we make the node 7[]'s next point to current, node.next = current;
+    then we break the link by assigning previous.next to node.
+
+            head
+             |
+             V
+             8[] -> 10[] WE BREAK IT HERE 1[] -> null
+                       |                   ^
+                       V                   |
+              node -> 7[]-------------------
+
+            
+insert node at end:   
+            head
+             |
+             V
+             8[] -> 10[] -> null
+insert(7, 3)
+    it follows the exact same process.
