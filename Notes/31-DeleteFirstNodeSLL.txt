@@ -1,0 +1,41 @@
+DELETE FIRST NODE OF A SINGLY LINKED LIST:
+
+    head
+     |
+     V
+     10[] -> 1[] -> 11[] -> null
+
+                                                public ListNode deleteFirst(){
+                                                    if(head == null){
+                                                        return null;
+                                                    }
+                                                    ListNode temp = head;
+                                                    head = head.next;
+                                                    temo.next = null;
+                                                    return temp;
+                                                }
+when we call deleteFirst();
+    check if head == null, it means no nodes to delete, return null.
+    our head points to 10:
+        create temp node that points to first node.
+                                                           head
+                                                            |
+                                                            V
+                                                            10[] -> 1[] -> 11[] -> null
+                                                            ^
+                                                            |
+                                                           temp
+after deletion it should only have 2 nodes.
+    we traverse the head to the second node by head = head.next;
+                                                                   head
+                                                                    |
+                                                                    V
+                                                            10[] -> 1[] -> 11[] -> null
+                                                            ^
+                                                            |
+                                                           temp
+then we can safely delete first node.
+    we must break linkage, so set temp.next = null;... no more pointing from first node to head: temp -> 10[] -> null
+    simply return temporary listNode as last step.
+    only 2 nodes left with head starting at head -> 1[] -> 11[] -> null           
+        
