@@ -1,0 +1,53 @@
+DELETE LAST NODE OF A SINGLY LINKED LIST:
+    head
+     |
+     V
+     10[] -> 1[] -> 11[] -> null
+                                    public ListNode deleteLast(){
+                                        if (head == null || head.next == null){
+                                            return head;
+                                        }
+                                        ListNode current = head;
+                                        ListNode previous = null;
+                                        while (current.next != null){
+                                            previous = current;
+                                            current = current.next;
+                                        }
+                                        previous.next = null;
+                                        return current;
+                                    }
+we create 2 pointers
+    "current" that treverses to last node
+    the other "previous" which travels to the second last node
+
+we call deleteLast()
+    if statement is false, so skip.
+    now we create 2 pointers, current & previous. current points at head, and previous points at null.
+                            head
+                            |
+                            V
+                            10[] -> 1[] -> 11[] -> null
+                            ^
+                            |
+                            current
+                            previous -> null
+now current will traverse untill its current.next != null, which means the final node that points to null
+in the first step we assign previous to current's position before it moves ahead.
+    previous remains 1 step behind always
+
+                           head   previous
+                            |       |
+                            V       V
+                            10[] -> 1[] -> 11[] -> null
+                                            ^
+                                            |
+                                          current
+we terminate while loop since its false
+    we assign a null value to previous.next
+    it will break the linkage.
+finally return the current.
+                            
+
+
+
+
