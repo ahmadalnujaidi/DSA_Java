@@ -1,0 +1,55 @@
+DELETE A NODE FROM A SINGLY LINKED LIST AT A GIVEN POSITION:
+
+Q. implement method to delete a node at a given position. Assuming position to be valid and starting from 1.
+
+    for example:
+        head
+         |
+         V
+        8[] -> 10[] -> 7[] -> 1[] -> null
+                                                if (position == 1){
+                                                    head = head.next;
+                                                } else {
+                                                    ListNode previous = head;
+                                                    int count = 1;
+                                                    while (count < position - 1){
+                                                        previous = previous.next;
+                                                        count++;
+                                                    }
+                                                    ListNode current = previous.next;
+                                                    previous.next = current.next;
+                                                }
+delete(1)
+    position = 1
+        we simply assign head.next to head. so now head points to second node.
+
+delete(3)
+    position = 3
+        if statement is false, we go to else.
+        we must somehow reach position (2) so we create a ListNode "previous"
+        traverse to (position - 1)
+          head
+            |
+            V
+            8[] -> 10[] -> 7[] -> 1[] -> null
+                    ^
+                    |
+                 previous
+
+now delete node at position 3
+    we must break the link, but we need to connect to what comes after position 3
+    make ListNode current, it will point to previous.next which is position 3 itself current -> 7[]
+    we simply assign previous.next to current.next which skips of the "current" node which is 7[]
+        
+        head  previous current
+         |      |       |
+         V      V       V
+        8[] -> 10[] -> 7[] -> 1[] -> null
+                |              ^
+                ---------------|         
+it becomes:
+            head
+            |
+            V
+            8[] -> 10[] -> 1[] -> null
+
