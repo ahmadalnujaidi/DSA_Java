@@ -1,0 +1,28 @@
+HOW TO SEARCH AN ELEMENT IN A LINKED LIST IN JAVA:
+
+        head
+         |
+         V
+        10[] -> 8[] -> 1[] -> 11[] -> null
+
+        ListNode current = head;
+        while(current != null){
+            if(current.data == searchKey){
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+
+
+searchKey = 1
+we create current that points at head at beggining 
+        head
+         |
+         V
+        10[] -> 8[] -> 1[] -> 11[] -> null
+        ^
+        |
+        current
+
+traverse over the linked list and try to match searchKey to the current.data

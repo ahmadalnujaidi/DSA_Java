@@ -1,16 +1,18 @@
 public class _21DeleteNodeGivenPositionSLL {
     public static void main(String[] args) {
         _21DeleteNodeGivenPositionSLL sll = new _21DeleteNodeGivenPositionSLL();
-        sll.insertLast(3);
-        sll.insertLast(4);
-        sll.insertLast(7);
-        sll.insertLast(8);
-        sll.insertLast(9);
-        sll.display();
+        sll.insertLast(3); // 3 -> null
+        sll.insertLast(4); // 3 -> 4 -> null
+        sll.insertLast(7); // 3 -> 4 -> 7 -> null
+        sll.insertLast(8); // 3 -> 4 -> 7 -> 8 -> null
+        sll.insertLast(9); // 3 -> 4 -> 7 -> 8 -> 9 -> null
+        sll.display(); 
 
         sll.delete(3);
         sll.display();
         sll.delete(1);
+        sll.display();
+        sll.delete(3);
         sll.display();
         
     }
