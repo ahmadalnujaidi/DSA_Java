@@ -1,0 +1,53 @@
+HOW TO REVERSE SINGLY LINKED LIST:
+
+
+INPUT:
+    head
+     |
+     V
+     10[] -> 8[]-> 1[] -> 11[] -> null
+
+OUTPUT:
+    head
+     |
+     V
+     11[] -> 1[]-> 8[] -> 10[] -> null
+
+ListNode current = head;
+ListNode previous = null;
+ListNode next = null;
+while(current != null) {
+    next = current.next;
+    current.next = previous;
+    previous = current;
+    current = next;
+}
+return previous;
+
+    head
+     |
+     V
+     10[] -> 8[]-> 1[] -> 11[] -> null
+     ^
+    current
+                previous -> null
+                next -> null
+
+    head
+     |
+     V
+     10[] -> 8[]-> 1[] -> 11[] -> null
+     ^        ^
+    current  next
+
+    previous
+     |            current
+     V             V
+     10[] -> null; 8[]-> 1[] -> 11[] -> null
+                   ^
+                  next
+
+then current.next points back at previous and reverses the SLL
+
+
+
